@@ -47,7 +47,7 @@ int main() {    // Hauptprogramm
         cout << " >>> ";
         getline(cin, kompletteEingabe);
 
-        if(kompletteEingabe == "Beenden")
+        if(kompletteEingabe == "Beenden" || kompletteEingabe == "beenden")
         {
             cout << " --> Programm wird beendet." << endl;
             break;
