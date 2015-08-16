@@ -89,6 +89,12 @@ int main() {    // Hauptprogramm
         befehle["gleis"].addAlias("track");
         befehle["gleis"].addAlias("g");
         befehle["gleis"].addAlias("G");
+	
+	befehle["licht"].addAlias("licht");
+	befehle["licht"].addAlias("light");
+	befehle["licht"].addAlias("l");
+	befehle["licht"].addAlias("L");
+	
     }
 
     while(true)
@@ -117,7 +123,8 @@ int main() {    // Hauptprogramm
         }
         if(befehle["gleis"].isThisCommand(eingabe[0]))
         {
-            gleissteuerung();
+            cout << "Gleis!" << endl;
+	    gleissteuerung();
             continue;
         }
         if(befehle["hilfe"].isThisCommand(eingabe[0]))
