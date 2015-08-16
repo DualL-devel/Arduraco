@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -std=c++11 -g    CMakeFiles/arduracocli.dir/main.o  -o arduracocli -rdynamic menuefunktionen/libmenuefunktionen.a datenstruktur/libdatenstruktur.a 

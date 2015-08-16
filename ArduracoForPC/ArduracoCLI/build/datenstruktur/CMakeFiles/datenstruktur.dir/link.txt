@@ -1,0 +1,2 @@
+/usr/bin/ar cr libdatenstruktur.a  CMakeFiles/datenstruktur.dir/gleis.o CMakeFiles/datenstruktur.dir/gleissystem.o CMakeFiles/datenstruktur.dir/licht.o CMakeFiles/datenstruktur.dir/reed.o CMakeFiles/datenstruktur.dir/zug.o
+/usr/bin/ranlib libdatenstruktur.a

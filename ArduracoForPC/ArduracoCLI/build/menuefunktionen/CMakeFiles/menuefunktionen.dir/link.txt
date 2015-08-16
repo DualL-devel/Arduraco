@@ -1,0 +1,2 @@
+/usr/bin/ar cr libmenuefunktionen.a  CMakeFiles/menuefunktionen.dir/zugsteuerung.o CMakeFiles/menuefunktionen.dir/gleissteuerung.o CMakeFiles/menuefunktionen.dir/lichtsteuerung.o
+/usr/bin/ranlib libmenuefunktionen.a

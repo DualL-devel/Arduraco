@@ -1,0 +1,3 @@
+/home/johannes/ArduRaCo/Arduraco.git/ArduracoForPC/ArduracoCLI/build/CMakeFiles/arduracocli.dir
+/home/johannes/ArduRaCo/Arduraco.git/ArduracoForPC/ArduracoCLI/build/datenstruktur/CMakeFiles/datenstruktur.dir
+/home/johannes/ArduRaCo/Arduraco.git/ArduracoForPC/ArduracoCLI/build/menuefunktionen/CMakeFiles/menuefunktionen.dir
