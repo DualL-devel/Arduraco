@@ -18,6 +18,7 @@ using namespace std;
 
 Gleissystem anlage; // neues Objekt der Klasse 'Gleissystem' wird erstellt
 unordered_map<string, Befehl> befehle;
+vector<string> eingabe;
 
 void neuerEintrag(string name, string ursprung) {
     Befehl toAdd;
@@ -26,14 +27,18 @@ void neuerEintrag(string name, string ursprung) {
 
 }
 
-string gleissteuerung(vector<string>* args) {
+string gleissteuerung() {
+    
+    return "";
 
 }
-string lichtsteuerung(vector<string>* args) {
+string lichtsteuerung() {
 
+    return "";
 }
-string zugsteuerung(vector<string>* args) {
+string zugsteuerung() {
 
+    return "";
 }
 
 vector<string> &split(const string &s, char delim, vector<string> &elems) {     // Funktion zum Aufteilen eines Strings in Tokens (in einen vorhandenen vector)
@@ -73,7 +78,7 @@ int main() {    // Hauptprogramm
         befehle["beenden"].addAlias("Q");
 
         befehle["zug"].addAlias("train");
-        //befehle["zug"].addAlias("zug");
+        befehle["zug"].addAlias("zug");
         befehle["zug"].addAlias("Z");
         befehle["zug"].addAlias("z");
 
@@ -98,21 +103,21 @@ int main() {    // Hauptprogramm
             cout << " --> Programm wird beendet." << endl;
             break;
         }
-        vector<string> eingabe = split(kompletteEingabe, ' ');
+        eingabe = split(kompletteEingabe, ' ');
         if(befehle["zug"].isThisCommand(eingabe[0]))
         {
             cout << "Zug!!!" << endl;
-            zugsteuerung(&eingabe);
+            zugsteuerung();
             continue;
         }
         if(befehle["licht"].isThisCommand(eingabe[0]))
         {
-            lichtsteuerung(&eingabe);
+            lichtsteuerung();
             continue;
         }
         if(befehle["gleis"].isThisCommand(eingabe[0]))
         {
-            gleissteuerung(&eingabe);
+            gleissteuerung();
             continue;
         }
         if(befehle["hilfe"].isThisCommand(eingabe[0]))
