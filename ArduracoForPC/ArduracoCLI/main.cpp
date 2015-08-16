@@ -67,6 +67,20 @@ int main() {    // Hauptprogramm
     neuerEintrag("gleis", "Gleis");
     neuerEintrag("licht", "Licht");
     neuerEintrag("hilfe", "Hilfe");
+    
+    neuerEintrag("neuerZug", "neuerZug");
+    neuerEintrag("loescheZug", "loescheZug");
+    neuerEintrag("neuesGleis", "neuesGleis");
+    neuerEintrag("loescheGleis", "loescheGleis");
+    neuerEintrag("neuesLicht", "neuesLicht");
+    neuerEintrag("loescheLicht", "loescheLicht");
+    
+    neuerEintrag("setSpeed", "setSpeed");
+    neuerEintrag("getSpeed", "getSpeed");
+    neuerEintrag("stop", "stop");
+    
+    neuerEintrag("switch", "switch");
+    neuerEintrag("getStatus", "getStatus");
 
 
     {   // registrieren der Aliase
