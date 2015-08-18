@@ -17,11 +17,11 @@ public:
   void neuesGleis(int idDavor, int idDanach, int iKontaktPin);
   void neuerZug(std::string iName, int iAdresse);
   void neuesLicht(std::string iName, int iPin);
-   
-private:
+  
   std::vector<Gleis> gleise;
   std::unordered_map<std::string, Zug> zuege;
   std::unordered_map<std::string, Licht> lichter;
+  
 };
 
 #endif // GLEISSYSTEM_H

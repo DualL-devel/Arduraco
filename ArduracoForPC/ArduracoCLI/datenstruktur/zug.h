@@ -9,12 +9,12 @@ class Zug
 {
 public:
   Zug(unsigned int iAdresse);
-  void setGeschwindigkeit(unsigned int ziel);
-  unsigned int getGeschwindigkeit();
+  void setGeschwindigkeit(int ziel);
+  int getGeschwindigkeit();
   
   
 private:
-  unsigned int adresse;
+  int adresse;
   Gleis* aktuell;
   int geschwindigkeit;
 };

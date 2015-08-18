@@ -28,7 +28,19 @@ void neuerEintrag(string name, string ursprung) {
 }
 
 string gleissteuerung() {
-    
+    string zurueck;
+    bool fehler;
+    if(befehle["setSpeed"].isThisCommand(eingabe[2])) {
+        if(eingabe.size() == 4)
+        {
+            int speed;
+            speed = stoi(eingabe[3]);
+            anlage.zuege.at(eingabe[1]).setGeschwindigkeit(stoi(eingabe[3])); // fehlt noch
+
+        }
+        else
+            fehler = false;
+    }
     return "";
 
 }
@@ -67,18 +79,18 @@ int main() {    // Hauptprogramm
     neuerEintrag("gleis", "Gleis");
     neuerEintrag("licht", "Licht");
     neuerEintrag("hilfe", "Hilfe");
-    
+
     neuerEintrag("neuerZug", "neuerZug");
     neuerEintrag("loescheZug", "loescheZug");
     neuerEintrag("neuesGleis", "neuesGleis");
     neuerEintrag("loescheGleis", "loescheGleis");
     neuerEintrag("neuesLicht", "neuesLicht");
     neuerEintrag("loescheLicht", "loescheLicht");
-    
+
     neuerEintrag("setSpeed", "setSpeed");
     neuerEintrag("getSpeed", "getSpeed");
     neuerEintrag("stop", "stop");
-    
+
     neuerEintrag("switch", "switch");
     neuerEintrag("getStatus", "getStatus");
 
@@ -98,17 +110,17 @@ int main() {    // Hauptprogramm
 
         befehle["hilfe"].addAlias("?");
         befehle["hilfe"].addAlias("help");
-        
+
         befehle["gleis"].addAlias("gleis");
         befehle["gleis"].addAlias("track");
         befehle["gleis"].addAlias("g");
         befehle["gleis"].addAlias("G");
-	
-	befehle["licht"].addAlias("licht");
-	befehle["licht"].addAlias("light");
-	befehle["licht"].addAlias("l");
-	befehle["licht"].addAlias("L");
-	
+
+        befehle["licht"].addAlias("licht");
+        befehle["licht"].addAlias("light");
+        befehle["licht"].addAlias("l");
+        befehle["licht"].addAlias("L");
+
     }
 
     while(true)
@@ -138,7 +150,7 @@ int main() {    // Hauptprogramm
         if(befehle["gleis"].isThisCommand(eingabe[0]))
         {
             cout << "Gleis!" << endl;
-	    gleissteuerung();
+            gleissteuerung();
             continue;
         }
         if(befehle["hilfe"].isThisCommand(eingabe[0]))
