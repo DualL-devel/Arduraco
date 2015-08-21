@@ -1,21 +1,14 @@
 #ifndef BEFEHL_H
 #define BEFEHL_H
 
-#include <string>
 #include <vector>
-#include <algorithm>
+#include <string>
 
 class Befehl
 {
-public:
-
-    void addAlias(std::string iAlias);
-
-    bool isThisCommand(std::string kandidat);
-
 private:
-    std::vector<std::string> aliase;
-
+    std::string* exec;
+    std::vector<std::string> alias;
 };
 
 #endif // BEFEHL_H
