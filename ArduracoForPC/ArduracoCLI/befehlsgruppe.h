@@ -12,7 +12,8 @@ private:
     std::unordered_map<std::string, Befehl> befehle;
     
 public:
-    void neuerBefehl(std::string name, std::string* exec);
+    void neuerBefehl(std::string name, std::string* exec, std::vector<std::string> args);
+    std::string ausfuehren(std::string befehl);
 };
 
 #endif // BEFEHLSGRUPPE_H
