@@ -2,10 +2,10 @@
 
 using namespace std;
 
-Befehl::Befehl(string ursprung, string* iExec, vector<string> iArgs)
+Befehl::Befehl(string ursprung, befehl_func iExec, vector<string> iArgs)
 {
     alias.push_back(ursprung);
-    exec = iExec;
+    m_exec = iExec;
     args = iArgs;
 }
 
@@ -23,10 +23,8 @@ bool Befehl::richtig(string kandidat)
         return false;
     }
 }
+
 string Befehl::ausfuehren()
 {
-    return "";//exec(args);
+    return m_exec(args);
 }
-
-
-

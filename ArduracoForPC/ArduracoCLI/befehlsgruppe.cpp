@@ -12,4 +12,3 @@ string Befehlsgruppe::ausfuehren(string befehl)
 {
     return befehle.at(befehl).ausfuehren();
 }
-

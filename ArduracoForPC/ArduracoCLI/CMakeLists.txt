@@ -7,4 +7,4 @@ install(TARGETS arduracocli RUNTIME DESTINATION bin)
 
 add_subdirectory(datenstruktur)
 
-target_link_libraries(arduracocli datenstruktur serial)
+target_link_libraries(arduracocli datenstruktur)
